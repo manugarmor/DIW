@@ -5,7 +5,8 @@
 		<title>Ejercicio 1</title>
 	</head>
 	<body>
-
+	<div style ="overflow">
+	<div style ="margin-left: 50px; float: left; border-width:20px; border-style:solid; padding: 35px;">
 		<h1>Esta es la página de prueba del Ejercicio1</h1>
 		<p><b>Este es un <i>texto de prueba en un parrafo, en negrita, con cursiva</i> y <span style="color:red ;font-weight:bold">con palabras en rojo</span></b></p>
 		 <code>Esto esta escrito en etiqueta code</code>
@@ -14,9 +15,7 @@
 Este es un texto 
 escrito con la etiqueta
 html pre </pre>
-		     
-		
-		<div>
+		     			
 		<table border=1>
 			<tr>
 				<th>Casilla 1 de Fila 1</th>
@@ -27,6 +26,7 @@ html pre </pre>
 				<th>Casilla 2 de Fila 2</th>
 			</tr>
 		</table><br/>
+		
 		<a href="https://www.youtube.com/watch?v=fzQ6gRAEoy0">Shelter, reza por la creación de la serie!</a>
 		<ol>
 			<li>Linea 1 de lista ordenada</li>
@@ -37,82 +37,77 @@ html pre </pre>
             <li>Linea 1 de lista desordenada</li>
             <li>Linea 2 de lista desordenada</li>
         </ul>
-		</div>
-		<div>
-		<table border=1>
+	
+	
+		<br/>
+		<iframe width="580" height="315" src="https://www.youtube.com/embed/fzQ6gRAEoy0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+	<div style ="margin-left: 30px; float: left">
+		<table border=20>
 			<tr>
 				<th><img src="imagenes/rinshigerushelter2.png" width="300" height="150"></th>
-				<th><img src="imagenes/rinshigerushelter3.jpg" width="300" height="150"></th>
 			</tr>
 			<tr>
 				<th><img src="imagenes/shelter-4.png" width="300" height="150"></th>
+			</tr>
+			<tr>
+				<th><img src="imagenes/rinshigerushelter3.jpg" width="300" height="150"></th>
+			</tr>
+			<tr>
 				<th><img src="imagenes/rinshigerushelter12.jpg" width="300" height="150"></th>
 			</tr>
-		</table><br/>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/fzQ6gRAEoy0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
-				<br/>
-				<div>
-				
-			<form>
-
-			<fieldset>
+		</table>
+	</div>
+	<br/>
+		
+	<div style ="margin-right: 30px; float: right">			
+		<form>
+			<fieldset style="width:500px">
 				<legend>SUSCRIPCIÓN</legend><br/>
-
-
-			<div>
-
-				<fieldset>
-					<legend>DATOS DEL CLIENTE</legend><br/>
-						<label>Usuario: </label>
+					<div>
+						<fieldset >
+							<legend>DATOS DEL CLIENTE</legend><br/>
+							<label>Usuario: </label>
 							<input size="25px" /><br/><br/>
-
-						<label for="email">Correo Electronico: </label>
+							<label for="email">Correo Electronico: </label>
 							<input type="email"  size="40px" name="email"/><br/><br/>
-
-						<label for="password">Contraseña: </label>
+							<label for="password">Contraseña: </label>
 							<input type="text" pattern=".{6,}" size="30px" name="password"/><br/><br/>
-						<p>(Longitud minima 6 caracteres)</p>
-				</fieldset>
-				<br/><br/>
-				
-				<fieldset>
-					<legend>COMO CONOCISTES LA WEB?</legend><br/>
-
+							<p>(Longitud minima 6 caracteres)</p>
+						</fieldset>
+						<br/><br/>			
+						<fieldset>
+							<legend>COMO CONOCISTES LA WEB?</legend><br/>
 							<input type="radio" checked/>
 							<label>A traves de un contacto</label><br/>
-
 							<input type="radio"/>
 							<label for="opc2">A traves de otra web</label><br/>
-
 							<input type="radio"/>
 							<label for="opc3">De casualidad</label><br/><br/>
-				</fieldset>
-				<br/><br/>
-				
-				<fieldset>
-					<legend>INFORMACIÓN DE INTERÉS</legend>
-
-						<p>Comentarios:</p>
+						</fieldset>
+						<br/><br/>				
+						<fieldset>
+							<legend>INFORMACIÓN DE INTERÉS</legend>
+							<p>Comentarios:</p>
 							<textarea rows="7" cols="60" placeholder="Si lo desea, escriba aqui su comentario"></textarea>
 							<br/><br/>
 							<input type="checkbox"/>
 							<label for="opc1">Acepto recibir información publicitaria</label><br/><br/>
-				</fieldset>
-					<br/>
-					<table >
-					
-						<tr>
-							<td><button >ENVIAR<br/>MENSAJE</button></td>
-							<td><button >BORRAR<br/> FORMULARIO</button></td>				
-						</tr>
-					</table>
-					<br/>
-					<hr>
-					<input type="date" name="fecha">
-					
+						</fieldset>
+						<br/>
+						<table >				
+							<tr>
+								<td><button >ENVIAR<br/>MENSAJE</button></td>
+								<td><button >BORRAR<br/> FORMULARIO</button></td>				
+							</tr>
+						</table>
+						<br/>
+						<hr>
+						<input type="date" name="fecha">				
 					</div>
+				</fieldset>
 			</form>
-			</div>
+		</div>
+		</div>
 	</body>
 </html> 
