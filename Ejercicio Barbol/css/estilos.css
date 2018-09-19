@@ -1,0 +1,55 @@
+div {
+	width: 20.7em;
+    margin-left: 40%; 
+    margin-right: 40%;
+	border-width: thin;
+	border-style: solid;
+	padding-left:0.5%;
+	padding-right:0.5%;
+	background-color: #f9f9f9;	    	
+}
+
+#fondoAzul {
+    color: white;
+    background-color: #69A0F3;
+    text-align: center;
+    font-weight: bold;
+    padding: 3%;      
+}
+
+#fondoAzul2 {
+    color: white;
+    background-color: #69A0F3;
+    text-align: center;     
+}
+
+#centrar {
+    text-align: center;
+}
+
+#centrar2 {
+    text-align: center;
+	padding-left: 13px;
+	padding-right: 13px;
+}
+
+#centrarImg{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+th{
+	text-align: left;
+	vertical-align: text-top;
+    width: 130px;
+}
+
+#mini{
+	font-size: 13px;
+}
+
+
+
+
+
