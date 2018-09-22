@@ -1,0 +1,75 @@
+div {
+	
+    margin-left: 10%; 
+    margin-right: 10%;		
+}
+
+#margborde {
+    margin-top: 5%;      
+}
+
+#mayus {
+    text-align: center;      
+}
+
+#izq{
+    padding-left: 25px;   
+    width: 100px
+}
+
+#der{
+	float:right;
+    padding-right: 25px;
+    width: 100px
+}
+
+#ajustarVale{
+	
+	padding-bottom: 65px;
+	width:20%;
+	text-align:right;
+}
+
+#ajustarJuve{
+	padding-bottom: 65px;
+	width:20%;
+	text-align:left;
+}
+
+#centrarAgrandar{
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom: 60px;
+	width:6%;
+	text-align:center;
+	font-size:55px;
+}
+
+#centrarAgrandar1{
+	border-right:solid;
+	border-width: thin;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom: 60px;
+	width:6%;
+	text-align:center;
+	font-size:55px;
+}
+
+#jugadores{
+	padding-left:51%;
+	font-size:12px;
+}
+
+#detalleTabla{
+	padding-top:15px;
+	width:100%;
+}
+
+#estadoPartido{
+	text-align:center;
+}
+
+a:hover {
+    color: orange;
+}
