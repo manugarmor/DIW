@@ -1,0 +1,64 @@
+
+#divcuerpo{
+	margin:auto;
+	margin-top:60px;
+	width:60%;	
+}
+
+h2{
+	color:#05b5fc;
+}
+
+#img1 {
+	float: left;
+	padding:1.6% 2%;
+}
+
+#by{
+	color:gray;
+	font-style: italic;	
+}
+
+#estrechar{	
+	line-height: 24px;
+	font-size:18px;
+	padding-left:10%;
+}
+
+#span1{
+	color:#38cff8;
+}
+
+#img2{
+	padding-left:10%;
+	float:left;
+}
+
+#textoPresentacion{
+	font-size:14px;
+	color:gray;
+	font-style: italic;
+	padding-left:13%;
+}
+
+#textoWeb{
+	line-height: 28px;
+	padding-left:10%;
+	font-size:19px;
+	color:gray;
+}
+
+a{
+	text-decoration:none;
+	padding-right:7%;
+	color:#38cff8;
+	float:right;
+}
+
+hr{
+	color:#d9dfe1;
+}
+
+
+
+
