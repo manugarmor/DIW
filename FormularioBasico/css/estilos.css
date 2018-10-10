@@ -1,0 +1,64 @@
+input[type=text], [type=password], [type=email], select, textarea{
+	width: 60%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	transition: all .5s ease-in-out;
+}
+
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+
+input[type=submit] {
+	margin-right: 14%;
+	background-color: rgb(228, 208, 26);
+	color: rgb(221, 18, 35);
+	padding: 12px 30px;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+}
+
+textarea{
+	transition: all .5s ease-in-out;
+}
+
+.mainDiv {
+	width:80%;
+	padding: 20px;
+}
+
+.seccion:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 500px) {
+    input[type=submit] {
+    width: 55%;
+    margin-top: 0;
+  }
+}
+
+input:invalid:hover {	
+	border: 1px solid red;
+}
+
+input:valid:hover {
+	transform: scale(1.1);
+	transition-duration: 1s;
+	border: 1px solid green;
+}
+
+textarea:hover {
+	transform: scale(1.1);
+	transition-duration: 1s;
+	border: 1px solid green;
+}

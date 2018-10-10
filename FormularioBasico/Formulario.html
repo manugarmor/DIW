@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel ="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Formulario</title>
+</head>
+<body>
+	<div class="mainDiv">
+		<form>
+			<div class="seccion">      
+				<label for="email">Email:</label>
+				<input type="email" autofocus="true" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" placeholder="sucorreo@correo.org">
+			</div>
+			<div class="seccion">
+				<label for="password">Password:</label>           
+				<input type="password" title="Debe tener digitos, minusculas, mayusculas y minimo 5 caracteres"name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" placeholder="*********">     
+			</div>
+			<div class="seccion">
+				<label for="description">Descripci&oacute;n</label>           
+				<textarea type="text" name="description" placeholder="Cuentame algo"></textarea>
+			</div>
+			<div class="seccion">
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
