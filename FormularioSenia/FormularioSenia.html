@@ -9,7 +9,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>   
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel ="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+	<link rel ="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+	<script src="formulario.js"></script>
 </head>
 <body>    
     <div class="container">
@@ -19,90 +20,92 @@
 			<div class="col-sm-2"><img class="img-responsive" src="img/direccion.png" width="100%" height="150"></div>
 		</div>
         <h4 class="text-center">COMUNICACIO DE MESURES CORRECTORES</h4><br/>
-        <form class="form-horizontal" role="form">    
+        <form onsubmit="return onSubmit(this)" class="form-horizontal" role="form">    
 			<div class="form-group row">
 				<label class="col-sm-1 col-form-label">ALUMNE:</label>
 				<div class="col-sm-7">
-					<input type="text" class="form-control" placeholder="Nombre Alumno...">
+					<input type="text" name="nombreAlumno" class="form-control" placeholder="Nombre Alumno...">
 				</div>			
 				<label for="inputPassword" class="col-sm-1 col-form-label">GRUP:</label>
 				<div class="col-sm-3">
-					<input type="text" class="form-control" placeholder="Grup...">
+					<input type="text" name="password" class="form-control" placeholder="Grup...">
 				</div>
 			</div>		
 			<div class="form-group row">		
 				<label class="col-sm-2 col-form-label">PROFESSOR/A:</label>
 				<div class="col-sm-6">
-					<input type="text" class="form-control " placeholder="Nombre Profesor...">
+					<input type="text" name="nombreProfesor" class="form-control " placeholder="Nombre Profesor...">
 				</div>			
 				<label class="col-sm-2 col-form-label">Horari d'atencio:</label>
 				<div class="col-sm-2">
-					<input type="text" class="form-control" placeholder="Horari d'atencio...">
+					<input type="text" name="horari" class="form-control" placeholder="Horari d'atencio...">
 				</div>						
 			</div>
 			<div class="form-group row">		
 				<label class="col-sm-2 col-form-label">Data de l'incident:</label>
 				<div class="col-sm-3">
-					<input type="text" class="form-control " placeholder="Data de l'incident...">
+					<input type="text" name="dataIncident" class="form-control " placeholder="Data de l'incident...">
 				</div>			
 				<label class="col-sm-1 col-form-label">Hora:</label>
 				<div class="col-sm-2">
-					<input type="text" class="form-control" placeholder="Hora...">
+					<input type="text" name="hora" class="form-control" placeholder="Hora...">
 				</div>			
 				<label class="col-sm-1 col-form-label">Lloc:</label>
 				<div class="col-sm-3">
-					<input type="text" class="form-control " placeholder="Lloc...">
+					<input type="text" name="lloc" class="form-control " placeholder="Lloc...">
 				</div>			
 			</div><br/>				
 			<p>En aplicació de l'article 37 del decret 39/08 sobre drets i deure, es comunica al pare/mare de l'alumne la imposició de la següent mesura correctora:</p>
 			<ol type="A">
 				<li>compareixença davant el cap d'estudis/director</li>
 				<li>retirada d'aparells electronics &#40;1&#41;</li>
-				<li>privaçio del temps de recreaçio el dies:<input class="col-sm-6 form-control" type="text" placeholder="Dies..."></li>
-				<li>realització de les següents tasques educadores:<input class="col-sm-8 form-control" type="text" placeholder="Tasques...">els dies:<input class="col-sm-4 form-control" type="text" placeholder="Dies...">i amb l'horari:<input class="col-sm-2 form-control" type="text" placeholder="Horari..."></li>
-				<li>suspensió del dret a participar en activitats extraescolars i complementàries des de:<input class="col-sm-3 form-control" type="text" placeholder="Suspensió des de...">fins a &#40;2&#41;:<input class="col-sm-3 form-control" type="text" placeholder="Suspensió fins a..."></li>               
-				<li>suspensió del dret de l'assistència a les classes de:<input class="col-sm-8 form-control" type="text" placeholder="Suspensió de les classes...">des de:<input class="col-sm-3 form-control" type="text" placeholder="Suspensió des de...">fins a &#40;2&#41;:<input class="col-sm-3 form-control" type="text" placeholder="Suspensió fins a..."></li>
+				<li>privaçio del temps de recreaçio el dies:<input class="col-sm-6 form-control" name="dies" type="text" placeholder="Dies..."></li>
+				<li>realització de les següents tasques educadores:<input class="col-sm-8 form-control" name="tasques" type="text" placeholder="Tasques...">els dies:<input class="col-sm-4 form-control" name="diesTasques" type="text" placeholder="Dies...">i amb l'horari:<input class="col-sm-2 form-control" name="horariTasques" type="text" placeholder="Horari..."></li>
+				<li>suspensió del dret a participar en activitats extraescolars i complementàries des de:<input class="col-sm-3 form-control" name="suspensioDesde" type="text" placeholder="Suspensió des de...">fins a &#40;2&#41;:<input class="col-sm-3 form-control" name="suspensioFinsa" type="text" placeholder="Suspensió fins a..."></li>               
+				<li>suspensió del dret de l'assistència a les classes de:<input class="col-sm-8 form-control" name="suspensioActivitas" type="text" placeholder="Suspensió de les classes...">des de:<input class="col-sm-3 form-control" name="suspensioActivitasDesde" type="text" placeholder="Suspensió des de...">fins a &#40;2&#41;:<input class="col-sm-3 form-control" name="suspensioActivitasFinsa" type="text" placeholder="Suspensió fins a..."></li>
 			</ol><br/>
 			<div class="form-group">
 				<label for="comment">Descripció de lincident:</label>
-				<textarea class="form-control" rows="5" placeholder="Escriba el que desitge..."></textarea>
+				<textarea class="form-control" name="textEscrit" rows="5" placeholder="Escriba el que desitge..."></textarea>
 			</div><br/>
 			<p>Tipificació &#40;3&#41; de l'incident segons l'article 35:<input class="form-control" type="text"></p><br/>				
 			<p>La comunicació als pares es fa pels següents mitjans:</p>
 			<div class="form-group row">			
 				<label class="col-sm-1 col-form-label">Telefon:</label>
 				<div class="col-sm-2">
-					<input type="text" class="form-control " placeholder="Telefon...">
+					<input type="text" name="telefon" class="form-control " placeholder="Telefon...">
 				</div>			
 				<label class="col-sm-2 col-form-label">Per correu:</label>
 				<div class="col-sm-7">
-					<input type="text" class="form-control" placeholder="Email...">
+					<input type="text" name="email" class="form-control" placeholder="Email...">
 				</div>						
 			</div>
 			<div class="form-group row">			
 				<label class="col-sm-2 col-form-label">Per mig de l'alumne:</label>
 				<div class="col-sm-2">
-					<input type="text" class="form-control " placeholder="Nom de l'alumne...">
+					<input type="text" name="nomAlumne" class="form-control " placeholder="Nom de l'alumne...">
 				</div>			
 				<label class="col-sm-3 col-form-label">Amb compareixença del pare/mare:</label>
 				<div class="col-sm-5">
-					<input type="text" class="form-control" placeholder="Nom del pare/mare...">
+					<input type="text" name="nomPare" class="form-control" placeholder="Nom del pare/mare...">
 				</div>						
 			</div><br/>
 			<div class="form-group row">			
 				<label class="col-sm-1 col-form-label">Paiporta:</label>
 				<div class="col-sm-1">
-					<input type="text" class="form-control " placeholder="Dia...">
+					<input type="text" name="dia" class="form-control " placeholder="Dia...">
 				</div>			
 				<label class="col-sm-1 col-form-label">de:</label>
 				<div class="col-sm-1">
-					<input type="text" class="form-control" placeholder="Mes...">
+					<input type="text" name="mes" class="form-control" placeholder="Mes...">
 				</div>
 				<label class="col-sm-1 col-form-label">de 201:</label>
 				<div class="col-sm-1">
-					<input type="text" class="form-control" placeholder="Any...">
-				</div>			
+					<input type="text" name="any" class="form-control" placeholder="Any...">
+				</div>							
 			</div>
+			<input class="float-right" type="submit" value="Enviar formulario">
+			<br/><br/><br/>
 			<p>&#40;1&#41; El pare o la mare de l'alumne podrà retirar l'aparell a partir del dia següent de rebre esta notificació en la direcció d'estudis.</p>
 			<p>&#40;2&#41; El pare o la mare de l'alumne disposa d'un termini de 10 dies a partir de rebre esta comunicaió per al preceptiu tràmit d'audiència amb el professor que ha imposat la mesura correctora. Per la qual cosa l'horari d'atenció del professor figura al costat del seu nom i el telèfon de l'institut en la capçalera.</p>
 			<p>&#40;3&#41; Tipificació:</p>
