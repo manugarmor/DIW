@@ -44,3 +44,7 @@
 #checkboxes2 label:hover {
     background-color: #c5c6c2;
 }
+
+.noVisible{
+    display: none;
+}
