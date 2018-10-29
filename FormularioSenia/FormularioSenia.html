@@ -171,19 +171,14 @@
 				</div>
 				<label class="col-sm-1 col-form-label">de 201:</label>
 				<div class="col-sm-1">
-					<input type="number02" name="any" class="form-control" placeholder="Any...">
+					<input type="number" name="any" class="form-control" placeholder="Any...">
 				</div>							
 			</div><br/>
-			<div class="form-group row">			
-				<label class="col-sm-3 col-form-label">Signatura del professor/a:</label>
-				<div class="col-sm-3">
-					<input type="text" name="signaturaProfessor" class="form-control " placeholder="Signatura professor...">
-				</div>			
-				<label class="col-sm-3 col-form-label">Signatura del cap d'estudis/director:</label>
-				<div class="col-sm-3">
-					<input type="text" name="signaturaCapD'estudisDirector" class="form-control" placeholder="Signatura Cap/Director...">
-				</div>							
-			</div><br/>
+			
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="defaultUnchecked" onclick="funcionCheck()">
+				<label class="custom-control-label" for="defaultUnchecked">Verificació per al cap d'estudis/director</label>
+			</div><br/><br/>
 			<input class="float-right" type="submit" value="Enviar formulario">
 			<br/><br/><br/>
 			<p class="borrarContenido">&#40;1&#41; El pare o la mare de l'alumne podrà retirar l'aparell a partir del dia següent de rebre esta notificació en la direcció d'estudis.</p>
