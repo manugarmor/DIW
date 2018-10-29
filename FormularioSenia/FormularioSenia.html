@@ -20,7 +20,7 @@
 			<div class="col-sm-2"><img class="img-responsive" src="img/direccion.png" width="100%" height="100px"></div>
 		</div>
         <h4 class="text-center borrarContenido">COMUNICACIÓ DE MESURES CORRECTORES</h4>
-		<h4 class="text-center mostrarContenido" style="display:none">COMUNICACIÓ DE CONDUCTES GREUMENT PERJUDICIALS<br/>PER A LA CONVIVÈNCIA EN EL CENTRE</h4><br/>
+		<h4 class="text-center mostrarContenido noVisible">COMUNICACIÓ DE CONDUCTES GREUMENT PERJUDICIALS<br/>PER A LA CONVIVÈNCIA EN EL CENTRE</h4><br/>
         <form onsubmit="return onSubmit(this)" class="form-horizontal" role="form">    
 			<div class="form-group row">
 				<label class="col-sm-1 col-form-label">ALUMNE:</label>
@@ -45,11 +45,11 @@
 			<div class="form-group row">		
 				<label class="col-sm-2 col-form-label">Data de l'incident:</label>
 				<div class="col-sm-3">
-					<input type="text" name="dataIncident" class="form-control " placeholder="Data de l'incident...">
+					<input type="date" name="dataIncident" class="form-control " placeholder="Data de l'incident...">
 				</div>			
 				<label class="col-sm-1 col-form-label">Hora:</label>
 				<div class="col-sm-2">
-					<input type="text" name="hora" class="form-control" placeholder="Hora...">
+					<input type="datetime" name="hora" class="form-control" placeholder="Hora...">
 				</div>			
 				<label class="col-sm-1 col-form-label">Lloc:</label>
 				<div class="col-sm-3">
@@ -107,7 +107,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="mostrarContenido" style="display:none">
+			<div class="mostrarContenido noVisible">
 				<p>Tipificació &#40;1&#41; de l'incident segons l'article 42:</p>
 				<div class="multiselect">
 					<div class="selectBox" onclick="showCheckboxes2()">
@@ -142,7 +142,7 @@
 			<div class="form-group row">			
 				<label class="col-sm-1 col-form-label">Telefon:</label>
 				<div class="col-sm-2">
-					<input type="text" name="telefon" class="form-control " placeholder="Telefon...">
+					<input type="number" name="telefon" class="form-control " placeholder="Telefon...">
 				</div>			
 				<label class="col-sm-2 col-form-label">Per correu:</label>
 				<div class="col-sm-7">
@@ -159,19 +159,19 @@
 					<input type="text" name="nomPare" class="form-control" placeholder="Nom del pare/mare...">
 				</div>						
 			</div><br/>
-			<p class="mostrarContenido" style="display:none">Les conductes greument perjudicials per a la convivència en el centre docent només podran ser objecte de mesura disciplinària amb la instrucció prèvia del corresponent expedient disciplinari &#40;art.45.1&#41;</p><br/>
+			<p class="mostrarContenido noVisible">Les conductes greument perjudicials per a la convivència en el centre docent només podran ser objecte de mesura disciplinària amb la instrucció prèvia del corresponent expedient disciplinari &#40;art.45.1&#41;</p><br/>
 			<div class="form-group row">			
 				<label class="col-sm-1 col-form-label">Paiporta:</label>
 				<div class="col-sm-1">
-					<input type="text" name="dia" class="form-control " placeholder="Dia...">
+					<input type="number" name="dia" class="form-control " placeholder="Dia...">
 				</div>			
 				<label class="col-sm-1 col-form-label">de:</label>
 				<div class="col-sm-1">
-					<input type="text" name="mes" class="form-control" placeholder="Mes...">
+					<input type="number" name="mes" class="form-control" placeholder="Mes...">
 				</div>
 				<label class="col-sm-1 col-form-label">de 201:</label>
 				<div class="col-sm-1">
-					<input type="text" name="any" class="form-control" placeholder="Any...">
+					<input type="number02" name="any" class="form-control" placeholder="Any...">
 				</div>							
 			</div><br/>
 			<div class="form-group row">			
