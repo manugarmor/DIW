@@ -5,7 +5,7 @@ const IncidenciaSchema = mongoose.Schema({
     grup:String,
     nombreProfesor:String,
     horari:Date,
-    dataIncident: Date,
+    dataIncident: String,
     hora: String,
     lloc: String,
     textEscrit: String,

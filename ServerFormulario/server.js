@@ -28,15 +28,13 @@ mongoose.connect(dbConfig.url,{
     });
 
 
+// Require incidencia routes
+require('./app/routes/incidencia.routes.js')(app);
+    
 // Vamos a definir un "punto de inicio"
 app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'FormularioSenia/index.html'));
 });
-
-//res.json({"message":"Parte Backend de nuestro programa"});
- 
-// Require incidencia routes
-require('./app/routes/incidencia.routes.js')(app);
 
 app.use(express.static(path.join(__dirname,'FormularioSenia')));
 

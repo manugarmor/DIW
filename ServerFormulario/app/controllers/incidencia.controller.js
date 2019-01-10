@@ -1,4 +1,5 @@
 const Incidencia = require('../models/incidencia.model.js');
+const path=require('path');
 
 // Crear y salvar
 exports.create = (req,res)=>{
@@ -12,129 +13,213 @@ exports.create = (req,res)=>{
     }
     if(req.body.faltesGreus=='comprobar'){
         req.body.faltesGreus=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.article37A=='comprobar'){
         req.body.article37A=true;
+    }else{
+        req.body.article37A=false;
     }
     if(req.body.article37B=='comprobar'){
         req.body.article37B=true;
+    }else{
+        req.body.article37B=false;
     }
     if(req.body.article37C=='comprobar'){
         req.body.article37C=true;
+    }else{
+        req.body.article37C=false;
     }
     if(req.body.article37D=='comprobar'){
         req.body.article37D=true;
+    }else{
+        req.body.article37D=false;
     }
     if(req.body.article37E=='comprobar'){
         req.body.article37E=true;
+    }else{
+        req.body.article37E=false;
     }
     if(req.body.article37F=='comprobar'){
         req.body.article37F=true;
+    }else{
+        req.body.article37F=false;
     }
     if(req.body.faltaLleuA=='comprobar'){
         req.body.faltaLleuA=true;
+    }else{
+        req.body.faltaLleuA=false;
     }
     if(req.body.faltaLleuB=='comprobar'){
         req.body.faltaLleuB=true;
+    }else{
+        req.body.faltaLleuB=false;
     }
     if(req.body.faltaLleuC=='comprobar'){
         req.body.faltaLleuC=true;
+    }else{
+        req.body.faltaLleuC=false;
     }
     if(req.body.faltaLleuD=='comprobar'){
         req.body.faltaLleuD=true;
+    }else{
+        req.body.faltaLleuD=false;
     }
     if(req.body.faltaLleuE=='comprobar'){
         req.body.faltaLleuE=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaLleuF=='comprobar'){
         req.body.faltaLleuF=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaLleuG=='comprobar'){
         req.body.faltaLleuG=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaLleuH=='comprobar'){
         req.body.faltaLleuH=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaLleuI=='comprobar'){
         req.body.faltaLleuI=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaLleuJ=='comprobar'){
         req.body.faltaLleuJ=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaLleuK=='comprobar'){
         req.body.faltaLleuK=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaLleuL=='comprobar'){
         req.body.faltaLleuL=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaLleuM=='comprobar'){
         req.body.faltaLleuM=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaLleuN=='comprobar'){
         req.body.faltaLleuN=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaLleuO=='comprobar'){
         req.body.faltaLleuO=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaLleuP=='comprobar'){
         req.body.faltaLleuP=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaLleuQ=='comprobar'){
         req.body.faltaLleuQ=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaLleuR=='comprobar'){
         req.body.faltaLleuR=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaLleuS=='comprobar'){
         req.body.faltaLleuS=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuA=='comprobar'){
         req.body.faltaGreuA=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuB=='comprobar'){
         req.body.faltaGreuB=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuC=='comprobar'){
         req.body.faltaGreuC=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuD=='comprobar'){
         req.body.faltaGreuD=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuE=='comprobar'){
         req.body.faltaGreuE=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuF=='comprobar'){
         req.body.faltaGreuF=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuG=='comprobar'){
         req.body.faltaGreuG=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuH=='comprobar'){
         req.body.faltaGreuH=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuI=='comprobar'){
         req.body.faltaGreuI=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuJ=='comprobar'){
         req.body.faltaGreuJ=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuK=='comprobar'){
         req.body.faltaGreuK=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuL=='comprobar'){
         req.body.faltaGreuL=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuM=='comprobar'){
         req.body.faltaGreuM=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuN=='comprobar'){
         req.body.faltaGreuN=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuO=='comprobar'){
         req.body.faltaGreuO=true;
+    }else{
+        req.body.faltesGreus=false;
     }
     if(req.body.faltaGreuP=='comprobar'){
         req.body.faltaGreuP=true;
+    }else{
+        req.body.faltesGreus=false;
     }
 
 
@@ -212,7 +297,7 @@ exports.create = (req,res)=>{
     })
 
     incidencia.save().then(data =>{
-        res.send(data);
+        res.sendFile(path.join(__dirname,'../../FormularioSenia/listar.html'));
     }).catch(err => {
         res.status(500).send({
             message: err.message|| "Something was wrong creating incidencia"
