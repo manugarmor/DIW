@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/cssGalletas1.css" />
+    <script>
+        var i = 0;
+        function dino1(){
+            i++;
+            document.getElementById("input1").value = i;
+        }
+        var j = 0;
+        function dino2(){
+            j++;
+            document.getElementById("input2").value = j;
+        }
+        var k = 0;
+        function dino3(){
+            k++;
+            document.getElementById("input3").value = k;
+        }
+    </script>
+  
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img id="imgbanner" src="img/banner.jpg">
+            <img src="img/logo.png" height="150" width="70%"> 
+
+        </div>
+        <div class="menu">
+                <img id="imgmenu" src="img/menuGalletas.jpg">
+                <button id="buttonSalada"><img id="salada" src="img/saladas.png"></button>
+				<input id="inputSalada" type="text" value="Saladas" disabled><br/>
+				<button id="buttonChocolate"><img id="chocolate" src="img/chocolate.png"></button>
+				<input id="inputChocolate" type="text" value="Chispas de Chocolate" disabled>
+        </div>
+        <div class="content">
+                <img id="imgbiscuit" src="img/fondoGalletas.png">
+            <button id="dino1" onclick="dino1()"><img src="img/dino1.png" height="200" width="200"></button>
+            <button id="dino2" onclick="dino2()"><img src="img/dino2.png" height="200" width="200"></button>
+            <button id="dino3" onclick="dino3()"><img src="img/dino3.png" height="200" width="200"></button>
+            
+            <div>
+                <input id="input1" type="text" value="0" disabled>
+                <input id="input2" type="text" value="0" disabled>
+                <input id="input3" type="text" value="0" disabled>
+            </div>
+        </div>
+        <div class="footer">
+			<img id="imgFooter" src="img/imgFooter.jpg">
+		</div>
+    </div>
+</body>
+</html>

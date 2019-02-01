@@ -1,0 +1,111 @@
+.container {
+  display: grid;
+  grid-gap: 5px;    
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 250px 150px 400px 50px;
+  grid-template-areas:
+      "h h h h h h h h h h h h"
+      "m m m m m m m m m m m m"
+      "c c c c c c c c c c c c"
+      "f f f f f f f f f f f f";
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+      grid-template-areas:
+          "m m m m m m h h h h h h"
+          "c c c c c c c c c c c c"
+          "f f f f f f f f f f f f";
+  }
+}
+
+.header {
+  grid-area: h;
+}
+
+.menu {
+  grid-area: m;
+}
+
+.content {
+  grid-area: c;
+}
+
+.footer {
+ grid-area: f;
+}
+
+#imgbiscuit{
+  position:absolute;
+  z-index:-1;
+  width: 98.5%;
+  height: 400px;
+}
+
+#imgbanner{
+  position:absolute;
+  z-index:-1;
+  width: 98.5%;
+  height: 250px;
+}
+
+#imgMenu{
+  position:absolute;
+  z-index:-1;
+  width:98.5%;
+  height: 150px; 
+}
+
+#imgFooter{
+  position:absolute;
+  z-index:-1;
+  width:98.5%;
+  height: 50px; 
+}
+
+.boton_personalizado{
+  margin-left: 1%;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+  color: #1883ba;
+  background-color: beige;
+  border-radius: 20px;
+  border: 2px solid #1883ba;
+}
+.boton_personalizado:hover{
+  color: #ffffff;
+  background-color: #1883ba;
+}
+
+#botonesMenu{
+  margin-top: 5%;
+}
+
+#galletasIzquierda{
+  position:absolute;
+  z-index:-1;
+  float: left;
+  width: 40%;
+  height: 398px;
+}
+
+#perlasChoco{
+  margin-left: 8%;
+  padding: 8%;
+  width: 20%;
+  height: 100px;
+}
+
+#galletasDerecha{
+  float: right;
+  width: 40%;
+  height: 398px;
+}
+
+#perlasChoco2{
+  margin-left: 8%;
+  padding: 8%;
+  width: 20%;
+  height: 100px;
+}
