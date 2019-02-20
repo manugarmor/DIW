@@ -3,7 +3,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    overflow: hidden;
 }
 
 #bck{
@@ -11,7 +10,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    overflow: hidden;
 }
 
 /* Container */
