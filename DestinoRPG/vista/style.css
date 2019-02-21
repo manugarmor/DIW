@@ -1,7 +1,16 @@
+#bckAdmin{
+    background-image: url("../img/logo/bckAdmin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
 body{
     background-image: url("../img/logo/login.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+	background-attachment: fixed;
     height: 100%;
 }
 
@@ -9,6 +18,7 @@ body{
 	background-image: url("../img/logo/login.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+	background-attachment: fixed;
     height: 100%;
 }
 
