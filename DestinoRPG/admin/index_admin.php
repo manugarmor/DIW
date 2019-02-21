@@ -17,7 +17,7 @@ $active_banner="active";
     <link rel="icon" href="../images/ico/favicon.ico">
     <title><?php echo $title;?></title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    
+    <link href="../vista/style.css" rel="stylesheet" type="text/css"> 
     <link href="css/navbar-fixed-top.css" rel="stylesheet">
   </head>
   <body>
