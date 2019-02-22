@@ -27,7 +27,7 @@ if($action == 'ajax'){
 	$adjacents  = 4; 
 	$offset = ($contenido - 1) * $per_page;
 	
-	//Count the total number of row in your table*/
+	//num de filas de la tabla*/
 	$count_query   = mysqli_query($con,"SELECT count(*) AS numrows FROM $tables  $sWhere ");
 	if ($row= mysqli_fetch_array($count_query))
 	{
@@ -56,7 +56,7 @@ if($action == 'ajax'){
 		
 		<?php
 	}
-	//loop through fetched data
+	
 	if ($numrows>0)	{
 		?>
 		
